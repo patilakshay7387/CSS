@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .svg-shape{
+            stroke-dasharray: 200 150;
+            stroke-dashoffset:-474;
+            stroke-width: 5px;
+            fill: transparent;
+            stroke: tomato;
+            border-bottom: 5px solid black;
+            transition: stroke-width 1s,
+            stroke-dashoffset 1s,
+            stroke-dasharray 1s;
+
+
+        }
+
+        .wrapper:hover .svg-shape{
+            stroke-dashoffset: 0;
+            stroke-dasharray: 760;;
+        }
+
+        .text{
+
+            font-size: medium;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 32px;
+            letter-spacing: 8px;
+            position: relative;
+            margin-left: 90px;
+            top: -48px;
+            
+         
+        }
+        .wrapper{
+            /* position: relative; */
+            margin: 0;
+            /* width: 600px; */
+            align-items: center;
+          
+           
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <svg height="60" width="320" xmlns="https://www.w3.org/2000/svg">
+            <rect class="svg-shape" height="60" width="320" />
+
+            <div class="text">Hello CSS</div>
+
+
+
+        </svg>
+
+    </div>
+</body>
+</html>
